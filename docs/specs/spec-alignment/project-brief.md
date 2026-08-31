@@ -156,11 +156,11 @@ n/a — no Sanity `operationalConfig` matched for this project. The connected Sa
 
 | Question | Status | Decision | Resolved |
 |---|---|---|---|
-| Project intent (tutorial vs. production) | Open | | |
-| `deleteInvoice` placeholder | Open | | |
-| Debug `/query` route | Open | | |
-| Test strategy | Open | | |
-| Storybook workflow | Open | | |
-| Two `utils.ts` files | Open | | |
-| GitHub repo-shape configuration | Open | | |
-| `develop` branch | Open | | |
+| Project intent (tutorial vs. production) | Resolved | This is a learning project — not being extended into a production application. Tier 0 authorized scope should reflect tutorial/learning boundaries. | 2026-08-31 · @shravya-99 |
+| `deleteInvoice` placeholder | Resolved | Intentional stub — the throw is deliberate (tutorial exercise). Not required to be completed. | 2026-08-31 · @shravya-99 |
+| Debug `/query` route | Resolved | No production concern — this is a learning project. Route can remain as-is. | 2026-08-31 · @shravya-99 |
+| Test strategy | Resolved | No tests planned for now. | 2026-08-31 · @shravya-99 |
+| Storybook workflow | Resolved | No Storybook workflow planned. | 2026-08-31 · @shravya-99 |
+| Two `utils.ts` files | Resolved | Keep as-is — `lib/utils.ts` (root, `cn` helper) and `app/lib/utils.ts` (currency/pagination) remain separate. | 2026-08-31 · @shravya-99 |
+| GitHub repo-shape configuration | Resolved | Tech lead will handle manually outside this process. | 2026-08-31 · @shravya-99 |
+| `develop` branch | Resolved | No `develop` branch — `main` is the working branch for this project. | 2026-08-31 · @shravya-99 |
