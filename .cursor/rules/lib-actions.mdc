@@ -1,0 +1,24 @@
+---
+description: Server Actions and data layer rules for app/lib/
+globs: ["app/lib/**/*.ts"]
+---
+
+# lib/ rules
+
+Generated from AGENTS.md — do not hand-edit. Regenerate with `npx @codeandtheory/sdp generate-rules`.
+
+## actions.ts
+- All mutations validated with Zod before any database write.
+- `deleteInvoice` (line 121) is an intentional tutorial placeholder — do not implement without a governing spec.
+- `revalidatePath` must be called after successful mutations to keep the Next.js cache consistent.
+
+## data.ts
+- Read-only database functions only — no mutations here.
+- All queries use the `postgres` tagged-template literal (`sql\`...\``) — never string concatenation.
+- `POSTGRES_URL` must be set in environment; SSL required (`ssl: 'require'`).
+
+## definitions.ts
+- Shared TypeScript types for all data models. Update here when the data schema changes — do not duplicate types in component files.
+
+## Secrets
+Never commit `POSTGRES_URL` or `AUTH_SECRET` values. Reference by env var name only.

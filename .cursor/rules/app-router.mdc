@@ -1,0 +1,25 @@
+---
+description: Next.js App Router conventions for app/ directory
+globs: ["app/**/*.tsx", "app/**/*.ts"]
+---
+
+# App Router rules
+
+Generated from AGENTS.md — do not hand-edit. Regenerate with `npx @codeandtheory/sdp generate-rules`.
+
+## Server-first rendering
+React Server Components by default. A Client Component (`"use client"`) is an explicit, justified exception. Do not add `"use client"` just to unblock a hook; push state up or restructure.
+
+## App Router conventions
+- Route segments live under `app/` only — no `pages/` directory.
+- Route-specific UI uses Next.js file conventions: `loading.tsx`, `error.tsx`, `not-found.tsx`.
+- Shared UI lives under `app/ui/`. Library code (data, actions, types, utils) lives under `app/lib/`.
+
+## Server Actions
+Mutations go through Server Actions (`"use server"` in `app/lib/actions.ts`). Validate all inputs at the action boundary using Zod before any database write.
+
+## Database access
+Never query the database directly from a UI component or a page — use functions from `app/lib/data.ts` (reads) or `app/lib/actions.ts` (mutations) only.
+
+## Spec gate
+No code changes without a governing, approved spec. A story's Tier 2 spec is the first commit on its feature branch.
