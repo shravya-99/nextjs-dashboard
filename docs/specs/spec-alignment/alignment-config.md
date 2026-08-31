@@ -27,6 +27,6 @@
 | Step | Artifact | Status | PR |
 |---|---|---|---|
 | project-research | docs/specs/spec-alignment/project-brief.md | DONE | https://github.com/shravya-99/nextjs-dashboard/pull/2 |
-| scaffold-agents-md | AGENTS.md + adapters | REVIEW | https://github.com/shravya-99/nextjs-dashboard/pull/3 |
+| scaffold-agents-md | AGENTS.md + adapters | DONE | https://github.com/shravya-99/nextjs-dashboard/pull/3 |
 | draft-tier0-spec | Tier 0 spec(s) under deliverables/ | DRAFT | — |
 | draft-tier1-specs | Tier 1 epics under deliverables/ | DRAFT | — |
