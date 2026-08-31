@@ -16,7 +16,7 @@
 ## Project context
 
 - Project status: Existing
-- Deliverables: not yet determined — confirmed by draft-tier0-spec when it runs
+- Deliverables: nextjs-dashboard (F-001-NEXTJS-DASHBOARD)
 - Operational Config lookup: None found for the name given — connected Sanity account is personal (projects: Frontend Flow, Day One Content Operations, tickets, Feedback Processor); no C&T org operationalConfig instance accessible.
 - Tech configuration: Next.js (TypeScript), Tailwind CSS, Auth.js (next-auth), pnpm; source dirs: app/, lib/; Next.js App Router dashboard application with authentication.
 - Planned structure: app/ (Next.js App Router pages and layouts), lib/ (utilities, data access), public/ (static assets). Single-app repo, no monorepo tooling.
@@ -28,5 +28,5 @@
 |---|---|---|---|
 | project-research | docs/specs/spec-alignment/project-brief.md | DONE | https://github.com/shravya-99/nextjs-dashboard/pull/2 |
 | scaffold-agents-md | AGENTS.md + adapters | DONE | https://github.com/shravya-99/nextjs-dashboard/pull/3 |
-| draft-tier0-spec | Tier 0 spec(s) under deliverables/ | DRAFT | — |
+| draft-tier0-spec | Tier 0 spec(s) under deliverables/ | REVIEW | — |
 | draft-tier1-specs | Tier 1 epics under deliverables/ | DRAFT | — |
