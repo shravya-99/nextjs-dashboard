@@ -1,0 +1,6 @@
+{
+  "discipline": "app-product-engineering",
+  "stack": ["typescript-nextjs"],
+  "adapters": ["CLAUDE.md", ".cursor/rules", ".github/copilot-instructions.md"],
+  "sdp_version": "0.1.0"
+}
